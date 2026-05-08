@@ -1,0 +1,8 @@
+# .gitignore
+
+.DS_Store
+.Rproj.user
+Icon*
+*[Cc]ache*
+[Pp]resentation
+tmp

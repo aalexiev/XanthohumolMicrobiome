@@ -1,0 +1,143 @@
+"Set","Feature","Name","Mod","Mod.name","Covar","Intrxn.pval"
+"IGCs","Mmus_a_414214_1",NA,NA,NA,"L_Hid1",0.0108258348876948
+"IGCs","Mmus_a_829820_4",NA,NA,NA,"L_Hid1",0.00223462051296449
+"IGCs","Mmus_c_117982_4",NA,NA,NA,"L_Hid2",0.0117093842753664
+"IGCs","Mmus_c_199351_1",NA,NA,NA,"L_Hid2",0.00204283310108249
+"IGCs","Mmus_a_399708_2",NA,NA,NA,"L_Hid3",7.79878158903054e-203
+"IGCs","Mmus_a_731530_1",NA,NA,NA,"L_Hid3",0.000296707960721279
+"IGCs","Mmus_a_129670_1",NA,NA,NA,"L_Hid4",1.99336612897197e-93
+"IGCs","Mmus_a_340508_1",NA,NA,NA,"L_Hid4",3.30490319088632e-62
+"IGCs","Mmus_a_7117_35",NA,NA,NA,"L_Hid4",5.91269157189664e-49
+"IGCs","Mmus_c_135507_4",NA,NA,NA,"L_Hid5",4.77923260547964e-109
+"IGCs","Mmus_a_149464_3",NA,NA,NA,"L_Hid6",1.90509521361728e-23
+"IGCs","Mmus_a_532873_2",NA,NA,NA,"L_Hid6",3.26377621710786e-11
+"IGCs","Mmus_a_640997_1",NA,NA,NA,"L_Hid6",6.8452926812959e-07
+"IGCs","Mmus_a_667335_2",NA,NA,NA,"L_Hid6",2.99665875635743e-10
+"IGCs","Mmus_c_113721_14",NA,NA,NA,"L_Hid6",1.9852444344113e-08
+"IGCs","Mmus_c_199483_5",NA,NA,NA,"L_Hid6",3.38819154733352e-17
+"IGCs","Mmus_c_215672_1",NA,NA,NA,"L_Hid6",0.0291982662145359
+"IGCs","Mmus_c_66407_10",NA,NA,NA,"L_Hid6",6.65173223225497e-25
+"IGCs","Mmus_c_83336_3",NA,NA,NA,"L_Hid6",6.2077369919542e-10
+"IGCs","Mmus_a_1150272_1",NA,NA,NA,"L_Vis1",1.18342108841009e-10
+"IGCs","Mmus_a_20568_1",NA,NA,NA,"L_Vis1",5.70720521243899e-27
+"IGCs","Mmus_a_25387_2",NA,NA,NA,"L_Vis1",2.06155817782433e-16
+"IGCs","Mmus_a_275288_3",NA,NA,NA,"L_Vis1",2.70558442502581e-06
+"IGCs","Mmus_a_30840_13",NA,NA,NA,"L_Vis1",1.60359648152448e-30
+"IGCs","Mmus_a_972390_1",NA,NA,NA,"L_Vis1",1.06763163928506e-29
+"IGCs","Mmus_c_124318_10",NA,NA,NA,"L_Vis1",0.0346183725734053
+"IGCs","Mmus_c_184729_1",NA,NA,NA,"L_Vis1",0.00162494869185175
+"IGCs","Mmus_c_66134_13",NA,NA,NA,"L_Vis1",0.000356199868490289
+"IGCs","Mmus_a_322952_2",NA,NA,NA,"L_Vis2",0.00138742578736359
+"IGCs","Mmus_a_678001_2",NA,NA,NA,"L_Vis2",6.17567182078985e-10
+"IGCs","Mmus_a_889500_1",NA,NA,NA,"L_Vis2",8.73172014373888e-05
+"IGCs","Mmus_c_161481_3",NA,NA,NA,"L_Vis2",8.06857539072206e-06
+"IGCs","Mmus_c_226789_7",NA,NA,NA,"L_Vis2",6.91014350843476e-23
+"IGCs","Mmus_c_226827_4",NA,NA,NA,"L_Vis2",0.0116890184580922
+"IGCs","Mmus_c_226827_59",NA,NA,NA,"L_Vis2",0.0348031338208402
+"IGCs","Mmus_c_250806_1",NA,NA,NA,"L_Vis2",0.0215147030842811
+"IGCs","Mmus_c_255690_7",NA,NA,NA,"L_Vis2",3.46955182151616e-05
+"IGCs","Mmus_c_39087_18",NA,NA,NA,"L_Vis2",2.43498540028635e-05
+"IGCs","Mmus_a_1021237_1",NA,NA,NA,"L_Vis3",1.40380533928075e-09
+"IGCs","Mmus_a_1029287_1",NA,NA,NA,"L_Vis3",7.90421263474318e-05
+"IGCs","Mmus_a_1162909_1",NA,NA,NA,"L_Vis3",0.0104267029929091
+"IGCs","Mmus_a_199485_4",NA,NA,NA,"L_Vis3",2.02770067741177e-06
+"IGCs","Mmus_a_812265_2",NA,NA,NA,"L_Vis3",8.87275423789824e-05
+"IGCs","Mmus_c_108837_8",NA,NA,NA,"L_Vis3",0.0119875775899847
+"IGCs","Mmus_c_145556_20",NA,NA,NA,"L_Vis3",0.00567855126617688
+"IGCs","Mmus_c_188830_1",NA,NA,NA,"L_Vis3",0.000977537291756456
+"IGCs","Mmus_c_41565_1",NA,NA,NA,"L_Vis3",0.0180439839498315
+"IGCs","Mmus_c_48748_136",NA,NA,NA,"L_Vis3",0.000165418135103322
+"IGCs","Mmus_a_1193440_1",NA,NA,NA,"L_Vis4",0.0174748981131153
+"IGCs","Mmus_a_341129_4",NA,NA,NA,"L_Vis4",7.72791726247325e-06
+"IGCs","Mmus_a_65909_1",NA,NA,NA,"L_Vis4",7.78188670210577e-09
+"IGCs","Mmus_a_671841_1",NA,NA,NA,"L_Vis4",3.02360229553789e-09
+"IGCs","Mmus_c_224751_68",NA,NA,NA,"L_Vis4",7.6147972712044e-14
+"IGCs","Mmus_c_11488_3",NA,NA,NA,"P_Cross",0.0339121868548029
+"IGCs","Mmus_a_1028221_1",NA,NA,NA,"P_TargetQ",0
+"IGCs","Mmus_a_131263_5",NA,NA,NA,"P_TargetQ",0
+"IGCs","Mmus_a_140805_4",NA,NA,NA,"P_TargetQ",0
+"IGCs","Mmus_a_165622_6",NA,NA,NA,"P_TargetQ",0
+"IGCs","Mmus_a_201441_3",NA,NA,NA,"P_TargetQ",0
+"IGCs","Mmus_a_243840_1",NA,NA,NA,"P_TargetQ",2.79708212323487e-143
+"IGCs","Mmus_a_351046_4",NA,NA,NA,"P_TargetQ",0
+"IGCs","Mmus_a_383470_1",NA,NA,NA,"P_TargetQ",0
+"IGCs","Mmus_a_407036_1",NA,NA,NA,"P_TargetQ",0
+"IGCs","Mmus_a_71668_3",NA,NA,NA,"P_TargetQ",2.85010554460539e-197
+"IGCs","Mmus_c_207801_1",NA,NA,NA,"P_TargetQ",0
+"IGCs","Mmus_a_1022013_1",NA,NA,NA,"P_Time",0.039114625551413
+"IGCs","Mmus_a_267291_2",NA,NA,NA,"P_Time",1.64510438664717e-09
+"IGCs","Mmus_a_52492_6",NA,NA,NA,"P_Time",1.46512418981674e-28
+"IGCs","Mmus_a_868877_1",NA,NA,NA,"P_Time",3.84093832053138e-23
+"IGCs","Mmus_c_112540_3",NA,NA,NA,"P_Time",0.0351923893274218
+"IGCs","Mmus_c_183292_2",NA,NA,NA,"P_Time",7.47075207404252e-09
+"IGCs","Mmus_c_185697_5",NA,NA,NA,"P_Time",1.76940123567535e-06
+"IGCs","Mmus_c_198603_6",NA,NA,NA,"P_Time",2.30829917707248e-44
+"IGCs","Mmus_c_242763_1",NA,NA,NA,"P_Time",0.00152759708871923
+"IGCs","Mmus_a_151749_8",NA,NA,NA,"SS_Vis",0
+"IGCs","Mmus_a_185384_2",NA,NA,NA,"SS_Vis",1.16804120999164e-27
+"IGCs","Mmus_a_198146_1",NA,NA,NA,"SS_Vis",1.68590546771809e-57
+"IGCs","Mmus_a_271658_1",NA,NA,NA,"SS_Vis",5.77005454014219e-84
+"IGCs","Mmus_a_341644_3",NA,NA,NA,"SS_Vis",3.68899113932738e-19
+"IGCs","Mmus_a_366607_2",NA,NA,NA,"SS_Vis",2.21579667117963e-40
+"IGCs","Mmus_a_370931_2",NA,NA,NA,"SS_Vis",2.62068431758559e-62
+"IGCs","Mmus_a_84986_7",NA,NA,NA,"SS_Vis",7.48502341096531e-39
+"IGCs","Mmus_c_195747_22",NA,NA,NA,"SS_Vis",1.03076800175538e-126
+"IGCs","Mmus_c_255139_2",NA,NA,NA,"SS_Vis",0
+"IGCs","Mmus_c_67139_20",NA,NA,NA,"SS_Vis",2.82865650156494e-52
+"KOs","K10979","ku; DNA end-binding protein Ku",NA,NA,"L_Hid1",0.0240241068175689
+"KOs","K15915","pglC; undecaprenyl phosphate N,N'-diacetylbacillosamine 1-phosphate transferase [EC:2.7.8.36]",NA,NA,"L_Hid1",3.30490319224046e-62
+"KOs","K22902","K22902; D-galactosaminyltransferase",NA,NA,"L_Hid2",4.77923260844546e-109
+"KOs","K03497","parB, spo0J; ParB family transcriptional regulator, chromosome partitioning protein",NA,NA,"L_Hid3",2.67067229628752e-140
+"KOs","K00048","fucO; lactaldehyde reductase [EC:1.1.1.77]",NA,NA,"L_Hid4",1.13419409313895e-124
+"KOs","K01679","E4.2.1.2B, fumC, FH; fumarate hydratase, class II [EC:4.2.1.2]","M00009","Citrate cycle (TCA cycle, Krebs cycle)","L_Hid4",0.000906113148584911
+"KOs","K01679","E4.2.1.2B, fumC, FH; fumarate hydratase, class II [EC:4.2.1.2]","M00011","Citrate cycle, second carbon oxidation, 2-oxoglutarate => oxaloacetate","L_Hid4",0.000906113148584911
+"KOs","K01679","E4.2.1.2B, fumC, FH; fumarate hydratase, class II [EC:4.2.1.2]","M00173","Reductive citrate cycle (Arnon-Buchanan cycle)","L_Hid4",0.000906113148584911
+"KOs","K01679","E4.2.1.2B, fumC, FH; fumarate hydratase, class II [EC:4.2.1.2]","M00376","3-Hydroxypropionate bi-cycle","L_Hid4",0.000906113148584911
+"KOs","K00991","ispD; 2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase [EC:2.7.7.60]","M00096","C5 isoprenoid biosynthesis, non-mevalonate pathway","L_Hid5",4.75605054108795e-31
+"KOs","K01056","PTH1, pth, spoVC; peptidyl-tRNA hydrolase, PTH1 family [EC:3.1.1.29]",NA,NA,"L_Hid5",0.00793606058817032
+"KOs","K00566","mnmA, trmU; tRNA-uridine 2-sulfurtransferase [EC:2.8.1.13]",NA,NA,"L_Hid6",3.50785240697692e-62
+"KOs","K00852","rbsK, RBKS; ribokinase [EC:2.7.1.15]",NA,NA,"L_Hid6",5.18503315468487e-10
+"KOs","K01735","aroB; 3-dehydroquinate synthase [EC:4.2.3.4]","M00022","Shikimate pathway, phosphoenolpyruvate + erythrose-4P => chorismate","L_Hid6",1.98773538432253e-20
+"KOs","K01817","trpF; phosphoribosylanthranilate isomerase [EC:5.3.1.24]","M00023","Tryptophan biosynthesis, chorismate => tryptophan","L_Hid6",8.55188544391395e-12
+"KOs","K02474","wbpO; UDP-N-acetyl-D-glucosamine/UDP-N-acetyl-D-galactosamine dehydrogenase [EC:1.1.1.136 1.1.1.-]",NA,NA,"L_Hid6",1.13975888645587e-05
+"KOs","K02825","pyrR; pyrimidine operon attenuation protein / uracil phosphoribosyltransferase [EC:2.4.2.9]",NA,NA,"L_Hid6",2.23089200283713e-23
+"KOs","K06908","K06908; uncharacterized protein",NA,NA,"L_Hid6",4.41143245178798e-14
+"KOs","K15898","pseI, neuB3; pseudaminic acid synthase [EC:2.5.1.97]",NA,NA,"L_Hid6",3.34452436639222e-20
+"KOs","K23078","mqnK, menK; menaquinone C8-methyltransferase [EC:2.1.1.350]",NA,NA,"L_Hid6",7.49876803677575e-20
+"KOs","K00340","nuoK; NADH-quinone oxidoreductase subunit K [EC:7.1.1.2]","M00144","NADH:quinone oxidoreductase, prokaryotes","L_Vis1",0.000721369815687132
+"KOs","K00459","ncd2, npd; nitronate monooxygenase [EC:1.13.12.16]",NA,NA,"L_Vis1",3.89646004332906e-05
+"KOs","K01258","pepT; tripeptide aminopeptidase [EC:3.4.11.4]",NA,NA,"L_Vis1",3.51773810816899e-09
+"KOs","K01308","yqgT; g-D-glutamyl-meso-diaminopimelate peptidase [EC:3.4.19.11]",NA,NA,"L_Vis1",0.046095741542839
+"KOs","K02052","ABC.SP.A; putative spermidine/putrescine transport system ATP-binding protein",NA,NA,"L_Vis1",0.0288926678549576
+"KOs","K07029","dagK; diacylglycerol kinase (ATP) [EC:2.7.1.107]",NA,NA,"L_Vis1",0.000335009234959411
+"KOs","K08153","blt; MFS transporter, DHA1 family, multidrug resistance protein",NA,NA,"L_Vis1",0.000348552185436983
+"KOs","K18831","higA; HTH-type transcriptional regulator / antitoxin HigA",NA,NA,"L_Vis1",3.82920245021285e-10
+"KOs","K19508","gfrC; fructoselysine/glucoselysine PTS system EIIC component",NA,NA,"L_Vis1",2.25824574884532e-06
+"KOs","K21600","csoR, ricR; CsoR family transcriptional regulator, copper-sensing transcriptional repressor",NA,NA,"L_Vis1",3.8110620611448e-08
+"KOs","K12452","ascC, ddhC, rfbH; CDP-4-dehydro-6-deoxyglucose reductase, E1 [EC:1.17.1.1]",NA,NA,"L_Vis2",0.0399169093763957
+"KOs","K05601","hcp; hydroxylamine reductase [EC:1.7.99.1]",NA,NA,"L_Vis3",0.00617313350831429
+"KOs","K00868","pdxK, pdxY; pyridoxine kinase [EC:2.7.1.35]",NA,NA,"L_Vis4",5.67745888023079e-11
+"KOs","K01815","kduI; 4-deoxy-L-threo-5-hexosulose-uronate ketol-isomerase [EC:5.3.1.17]",NA,NA,"L_Vis4",1.87125284259403e-07
+"KOs","K02437","gcvH, GCSH; glycine cleavage system H protein","M00532","Photorespiration","L_Vis4",1.15816282716831e-12
+"KOs","K02803","nagEb; N-acetylglucosamine PTS system EIIB component [EC:2.7.1.193]",NA,NA,"L_Vis4",7.67132561454196e-05
+"KOs","K03696","clpC; ATP-dependent Clp protease ATP-binding subunit ClpC",NA,NA,"L_Vis4",3.53147519496175e-21
+"KOs","K06382","spoIIE; stage II sporulation protein E [EC:3.1.3.16]",NA,NA,"L_Vis4",0.0326841535597422
+"KOs","K06989","nadX, ASPDH; aspartate dehydrogenase [EC:1.4.1.21]","M00115","NAD biosynthesis, aspartate => quinolinate => NAD","L_Vis4",4.55428379863036e-07
+"KOs","K11145","mrnC; mini-ribonuclease III [EC:3.1.26.-]",NA,NA,"L_Vis4",0.000722463912075484
+"KOs","K18704","tarL; CDP-ribitol ribitolphosphotransferase / teichoic acid ribitol-phosphate polymerase [EC:2.7.8.14 2.7.8.47]",NA,NA,"L_Vis4",2.98695756838295e-05
+"KOs","K21903","cadC, smtB; ArsR family transcriptional regulator, lead/cadmium/zinc/bismuth-responsive transcriptional repressor",NA,NA,"L_Vis4",0.0400230076502351
+"KOs","K17363","urdA; urocanate reductase [EC:1.3.99.33]",NA,NA,"P_Cross",0.0373787922690122
+"KOs","K00675","nhoA; N-hydroxyarylamine O-acetyltransferase [EC:2.3.1.118]",NA,NA,"P_TargetQ",9.60755293605219e-18
+"KOs","K01142","E3.1.11.2, xthA; exodeoxyribonuclease III [EC:3.1.11.2]",NA,NA,"P_TargetQ",2.21177205736945e-11
+"KOs","K02192","bfd; bacterioferritin-associated ferredoxin",NA,NA,"P_TargetQ",1.08726582747691e-07
+"KOs","K02198","ccmF; cytochrome c-type biogenesis protein CcmF",NA,NA,"P_TargetQ",3.9858870561903e-36
+"KOs","K03317","TC.CNT; concentrative nucleoside transporter, CNT family",NA,NA,"P_TargetQ",2.34933635547366e-07
+"KOs","K03558","cvpA; membrane protein required for colicin V production",NA,NA,"P_TargetQ",9.43614667340736e-17
+"KOs","K09117","K09117; uncharacterized protein",NA,NA,"P_TargetQ",0.000498147852274352
+"KOs","K10237","thuF, sugA; trehalose/maltose transport system permease protein",NA,NA,"P_TargetQ",0.00173797968935997
+"KOs","K12234","cofE; coenzyme F420-0:L-glutamate ligase / coenzyme F420-1:gamma-L-glutamate ligase [EC:6.3.2.31 6.3.2.34]","M00378","F420 biosynthesis, archaea","P_TargetQ",3.11605977386378e-11
+"KOs","K18815","aac6-I; aminoglycoside 6'-N-acetyltransferase I [EC:2.3.1.82]",NA,NA,"P_TargetQ",1.99117406965572e-47
+"KOs","K19171","dndD; DNA sulfur modification protein DndD",NA,NA,"P_TargetQ",3.92312288099085e-09
+"KOs","K02794","manX; mannose PTS system EIIAB component [EC:2.7.1.191]",NA,NA,"P_Time",0.00316308114100783
+"KOs","K03753","mobB; molybdopterin-guanine dinucleotide biosynthesis adapter protein",NA,NA,"P_Time",0.0244512351175325
+"KOs","K07714","atoC; two-component system, NtrC family, response regulator AtoC",NA,NA,"SS_Vis",0.0424754054672865

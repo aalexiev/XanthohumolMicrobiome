@@ -1,0 +1,4 @@
+"KO","ceramide","term","estimate","std.error","p.value","term_type","interaction_diet"
+"K03338","Liver","ceramide_levels:DietTXN",-9.29187985346172e-05,3.39440827867311e-05,0.00966676725290182,"interaction","DietTXN"
+"K03338","Liver","ceramide_levels:DietDXN",-5.00406243253549e-05,2.19988153693682e-05,0.0291610196386166,"interaction","DietDXN"
+"K20268","Liver","ceramide_levels:DietXN",-1.11934805433807e-06,5.07023444472072e-07,0.0339135598356285,"interaction","DietXN"
