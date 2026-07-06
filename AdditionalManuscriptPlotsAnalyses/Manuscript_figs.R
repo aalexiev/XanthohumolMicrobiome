@@ -331,6 +331,32 @@ BA_legend$varID == names(BA_tab_w_metadata[,2:12])
 BA_tab_w_meta2 <- BA_tab_w_metadata %>%
   rename_with(~ BA_legend$combo, all_of(names(BA_tab_w_metadata[,2:12])))
 
+# --- Characterize which contrast drives each significant bile acid ---
+
+# 1. Which bile acids are significant after BH?
+sig_bas <- ba_p_table$bile_acid[ba_p_table$BH_p < 0.05]
+
+# 2. Pull the Diet contrast rows from each significant bile acid's coefficient table
+contrast_summary <- do.call(rbind, lapply(sig_bas, function(col) {
+  coefs <- ba_lm_res[[col]]$coefficients
+  diet_rows <- grep("^Diet", rownames(coefs))          # XN/DXN/TXN vs control
+  data.frame(
+    bile_acid = col,
+    label     = BA_legend$Label[match(col, BA_legend$varID)],
+    contrast  = sub("^Diet", "", rownames(coefs)[diet_rows]),
+    estimate  = coefs[diet_rows, 1],
+    std_error = coefs[diet_rows, 2],
+    p_value   = coefs[diet_rows, 4],
+    row.names = NULL
+  )
+}))
+
+# 3. Order for readability: by bile acid, then by contrast p-value
+contrast_summary <- contrast_summary[
+  order(contrast_summary$bile_acid, contrast_summary$p_value), ]
+
+print(contrast_summary, digits = 3)
+
 ##################### BA KO rf regressions #####################
 KOdf_all <- as.data.frame(OTU1) %>%
   rownames_to_column("Sample")
