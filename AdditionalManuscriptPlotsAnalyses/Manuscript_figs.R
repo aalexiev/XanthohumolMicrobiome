@@ -306,6 +306,33 @@ for (col in names) {
 }
 # they all are significant!
 
+## redo with BH correction 
+# do these bile acids differ with treatment?
+ba_names <- names(BA_tab_w_metadata[, 2:12])   # 11 secondary bile acids
+
+# fit lm(BA ~ Diet) per bile acid; capture the omnibus treatment p-value (F-test)
+ba_lm_res <- lapply(setNames(ba_names, ba_names), function(col) {
+  frm <- as.formula(paste(col, "~ Diet"))       # was: paste(names, ...) -> bug
+  fit <- lm(frm, data = BA_tab_w_metadata)
+  sm  <- summary(fit)
+  fstat <- sm$fstatistic
+  omnibus_p <- pf(fstat[1], fstat[2], fstat[3], lower.tail = FALSE)
+  list(fit = fit, coefficients = sm$coefficients, omnibus_p = unname(omnibus_p))
+})
+
+# BH-correct the omnibus treatment p-values across all 11 bile acids
+raw_p <- sapply(ba_lm_res, `[[`, "omnibus_p")
+bh_p  <- p.adjust(raw_p, method = "BH")
+
+ba_p_table <- data.frame(
+  bile_acid = ba_names,
+  raw_p     = raw_p,
+  BH_p      = bh_p,
+  row.names = NULL
+)
+ba_p_table <- ba_p_table[order(ba_p_table$BH_p), ]
+print(ba_p_table)
+
 # graphs
 BA_legend <- read.csv("Input/bileAcids_and_lipids_legend.csv") %>%
   dplyr::filter(Group == "Secondary") %>%
