@@ -292,20 +292,6 @@ ggplot(data = BA_tab_w_metadata, aes(x = richness, y = var001, color = Diet)) +
   geom_point() +
   geom_smooth(method = 'lm')
 
-# do these bile acids differ with treatment?
-names <- names(BA_tab_w_metadata[,2:12])
-res_perms <- c()
-for (col in names) {
-  formula <- as.formula(paste(names, "~ Diet"))
-  perm <- summary(lm(formula, data = BA_tab_w_metadata))
-  if (any(perm$coefficients[2:4, 4] <= 0.05)) {
-    res_perms[[col]] <- perm$coefficients
-  } else {
-    res_perms[[col]] <- "Not Significant"
-  }
-}
-# they all are significant!
-
 ## redo with BH correction 
 # do these bile acids differ with treatment?
 ba_names <- names(BA_tab_w_metadata[, 2:12])   # 11 secondary bile acids
