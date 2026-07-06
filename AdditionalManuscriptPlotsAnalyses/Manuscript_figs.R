@@ -35,7 +35,7 @@ res <- read.delim("~/Documents/Projects/Writing/Research manuscripts/Xanthohumol
 ## first of p-values
 res <- res %>%
   mutate(signif = case_when(Intrxn.pval <= 0.05 ~ "*",
-                                      TRUE ~ "ns")) %>%
+                            TRUE ~ "ns")) %>%
   dplyr::filter(signif != "ns")
 
 heat_pvals <- ggplot(data = res, aes(x = Covar, y = KO.description)) +
@@ -159,8 +159,8 @@ for (i in 1:13) {
 
 # now the ko's of interest from fig 1D
 interestkos <- list("K00179", "K00180",
-               "K01023", "K01667", "K06445",
-               "K07516", "K10797", "K18244")
+                    "K01023", "K01667", "K06445",
+                    "K07516", "K10797", "K18244")
 xn.ko.plot.dt_long <- xn.ko.plot.dt %>%
   rownames_to_column("Sample") %>%
   pivot_wider(id_cols = c(Sample, Diet), names_from = KO, values_from = Abund) %>%
@@ -292,32 +292,19 @@ ggplot(data = BA_tab_w_metadata, aes(x = richness, y = var001, color = Diet)) +
   geom_point() +
   geom_smooth(method = 'lm')
 
-## redo with BH correction 
 # do these bile acids differ with treatment?
-ba_names <- names(BA_tab_w_metadata[, 2:12])   # 11 secondary bile acids
-
-# fit lm(BA ~ Diet) per bile acid; capture the omnibus treatment p-value (F-test)
-ba_lm_res <- lapply(setNames(ba_names, ba_names), function(col) {
-  frm <- as.formula(paste(col, "~ Diet"))       # was: paste(names, ...) -> bug
-  fit <- lm(frm, data = BA_tab_w_metadata)
-  sm  <- summary(fit)
-  fstat <- sm$fstatistic
-  omnibus_p <- pf(fstat[1], fstat[2], fstat[3], lower.tail = FALSE)
-  list(fit = fit, coefficients = sm$coefficients, omnibus_p = unname(omnibus_p))
-})
-
-# BH-correct the omnibus treatment p-values across all 11 bile acids
-raw_p <- sapply(ba_lm_res, `[[`, "omnibus_p")
-bh_p  <- p.adjust(raw_p, method = "BH")
-
-ba_p_table <- data.frame(
-  bile_acid = ba_names,
-  raw_p     = raw_p,
-  BH_p      = bh_p,
-  row.names = NULL
-)
-ba_p_table <- ba_p_table[order(ba_p_table$BH_p), ]
-print(ba_p_table)
+names <- names(BA_tab_w_metadata[,2:12])
+res_perms <- c()
+for (col in names) {
+  formula <- as.formula(paste(names, "~ Diet"))
+  perm <- summary(lm(formula, data = BA_tab_w_metadata))
+  if (any(perm$coefficients[2:4, 4] <= 0.05)) {
+    res_perms[[col]] <- perm$coefficients
+  } else {
+    res_perms[[col]] <- "Not Significant"
+  }
+}
+# they all are significant!
 
 # graphs
 BA_legend <- read.csv("Input/bileAcids_and_lipids_legend.csv") %>%
@@ -330,84 +317,6 @@ BA_legend$varID == names(BA_tab_w_metadata[,2:12])
 
 BA_tab_w_meta2 <- BA_tab_w_metadata %>%
   rename_with(~ BA_legend$combo, all_of(names(BA_tab_w_metadata[,2:12])))
-
-# --- Characterize which contrast drives each significant bile acid ---
-
-# 1. Which bile acids are significant after BH?
-sig_bas <- ba_p_table$bile_acid[ba_p_table$BH_p < 0.05]
-
-# 2. Pull the Diet contrast rows from each significant bile acid's coefficient table
-contrast_summary <- do.call(rbind, lapply(sig_bas, function(col) {
-  coefs <- ba_lm_res[[col]]$coefficients
-  diet_rows <- grep("^Diet", rownames(coefs))          # XN/DXN/TXN vs control
-  data.frame(
-    bile_acid = col,
-    label     = BA_legend$Label[match(col, BA_legend$varID)],
-    contrast  = sub("^Diet", "", rownames(coefs)[diet_rows]),
-    estimate  = coefs[diet_rows, 1],
-    std_error = coefs[diet_rows, 2],
-    p_value   = coefs[diet_rows, 4],
-    row.names = NULL
-  )
-}))
-
-# 3. Order for readability: by bile acid, then by contrast p-value
-contrast_summary <- contrast_summary[
-  order(contrast_summary$bile_acid, contrast_summary$p_value), ]
-
-print(contrast_summary, digits = 3)
-
-library(tidyverse)
-
-# ---- 1. Plot data: the 6 BH-significant bile acids, long format ----
-sig_bas    <- ba_p_table$bile_acid[ba_p_table$BH_p < 0.05]      # var001,002,003,008,010,022
-sig_labels <- BA_legend$Label[match(sig_bas, BA_legend$varID)]
-
-plot_dat <- BA_tab_w_metadata %>%
-  select(Diet, all_of(sig_bas)) %>%
-  pivot_longer(all_of(sig_bas), names_to = "varID", values_to = "abundance") %>%
-  mutate(
-    label = factor(BA_legend$Label[match(varID, BA_legend$varID)], levels = sig_labels),
-    Diet  = factor(Diet, levels = c("CTR", "XN", "DXN", "TXN"))   # <-- verify with levels()
-  )
-
-# ---- 2. Significance stars from per-contrast results (vs control) ----
-star_of <- function(p) ifelse(p < .001, "***", ifelse(p < .01, "**", ifelse(p < .05, "*", "")))
-
-y_pos <- plot_dat %>%                          # a little headroom above the tallest box, per facet
-  group_by(label) %>%
-  summarise(ystar = max(abundance, na.rm = TRUE) +
-                    0.08 * diff(range(abundance, na.rm = TRUE)), .groups = "drop")
-
-star_dat <- contrast_summary %>%
-  filter(p_value < 0.05) %>%
-  transmute(
-    label = factor(label, levels = sig_labels),
-    Diet  = factor(contrast, levels = c("CTR", "XN", "DXN", "TXN")),
-    star  = star_of(p_value)
-  ) %>%
-  left_join(y_pos, by = "label")
-
-# ---- 3. Faceted boxplot with asterisks over significant treatments ----
-diet_colors <- c("CTR" = "#999999", "XN" = "#E69F00", "DXN" = "#56B4E9", "TXN" = "#009E73")
-
-fig5 <- ggplot(plot_dat, aes(Diet, abundance, fill = Diet)) +
-  geom_boxplot(outlier.size = 0.6, width = 0.65) +
-  geom_text(data = star_dat, aes(x = Diet, y = ystar, label = star),
-            inherit.aes = FALSE, size = 5) +
-  facet_wrap(~ label, scales = "free_y", ncol = 3) +
-  scale_fill_manual(values = diet_colors) +
-  labs(x = "Treatment", y = "Normalized bile acid abundance") +
-  theme_bw(base_size = 12) +
-  theme(legend.position = "none", strip.text = element_text(face = "bold"),
-        panel.grid.minor = element_blank())
-
-fig5
-ggsave("Plots/fig5_secondary_bile_acids_by_treatment.png", fig5,
-       width = 9, height = 6, dpi = 300)
-
-# ---- 4. Save the full contrast table as a supplemental table ----
-write.csv(contrast_summary, "Plots/fig5_bile_acid_contrasts.csv", row.names = FALSE)
 
 ##################### BA KO rf regressions #####################
 KOdf_all <- as.data.frame(OTU1) %>%
@@ -852,7 +761,6 @@ ggplot(data = cerm_ko_signif, aes(x = ceramide_levels, y = abundance, color = Di
 # ggsave("~/Documents/Projects/Writing/Research manuscripts/Xanthohumol/XN fig prototypes/rfKOs_ceramide22diet_signif.tiff",
 #        width = 7, height = 5,
 #        dpi = 300)
-
 
 
 
