@@ -357,6 +357,58 @@ contrast_summary <- contrast_summary[
 
 print(contrast_summary, digits = 3)
 
+library(tidyverse)
+
+# ---- 1. Plot data: the 6 BH-significant bile acids, long format ----
+sig_bas    <- ba_p_table$bile_acid[ba_p_table$BH_p < 0.05]      # var001,002,003,008,010,022
+sig_labels <- BA_legend$Label[match(sig_bas, BA_legend$varID)]
+
+plot_dat <- BA_tab_w_metadata %>%
+  select(Diet, all_of(sig_bas)) %>%
+  pivot_longer(all_of(sig_bas), names_to = "varID", values_to = "abundance") %>%
+  mutate(
+    label = factor(BA_legend$Label[match(varID, BA_legend$varID)], levels = sig_labels),
+    Diet  = factor(Diet, levels = c("CTR", "XN", "DXN", "TXN"))   # <-- verify with levels()
+  )
+
+# ---- 2. Significance stars from per-contrast results (vs control) ----
+star_of <- function(p) ifelse(p < .001, "***", ifelse(p < .01, "**", ifelse(p < .05, "*", "")))
+
+y_pos <- plot_dat %>%                          # a little headroom above the tallest box, per facet
+  group_by(label) %>%
+  summarise(ystar = max(abundance, na.rm = TRUE) +
+                    0.08 * diff(range(abundance, na.rm = TRUE)), .groups = "drop")
+
+star_dat <- contrast_summary %>%
+  filter(p_value < 0.05) %>%
+  transmute(
+    label = factor(label, levels = sig_labels),
+    Diet  = factor(contrast, levels = c("CTR", "XN", "DXN", "TXN")),
+    star  = star_of(p_value)
+  ) %>%
+  left_join(y_pos, by = "label")
+
+# ---- 3. Faceted boxplot with asterisks over significant treatments ----
+diet_colors <- c("CTR" = "#999999", "XN" = "#E69F00", "DXN" = "#56B4E9", "TXN" = "#009E73")
+
+fig5 <- ggplot(plot_dat, aes(Diet, abundance, fill = Diet)) +
+  geom_boxplot(outlier.size = 0.6, width = 0.65) +
+  geom_text(data = star_dat, aes(x = Diet, y = ystar, label = star),
+            inherit.aes = FALSE, size = 5) +
+  facet_wrap(~ label, scales = "free_y", ncol = 3) +
+  scale_fill_manual(values = diet_colors) +
+  labs(x = "Treatment", y = "Normalized bile acid abundance") +
+  theme_bw(base_size = 12) +
+  theme(legend.position = "none", strip.text = element_text(face = "bold"),
+        panel.grid.minor = element_blank())
+
+fig5
+ggsave("Plots/fig5_secondary_bile_acids_by_treatment.png", fig5,
+       width = 9, height = 6, dpi = 300)
+
+# ---- 4. Save the full contrast table as a supplemental table ----
+write.csv(contrast_summary, "Plots/fig5_bile_acid_contrasts.csv", row.names = FALSE)
+
 ##################### BA KO rf regressions #####################
 KOdf_all <- as.data.frame(OTU1) %>%
   rownames_to_column("Sample")
