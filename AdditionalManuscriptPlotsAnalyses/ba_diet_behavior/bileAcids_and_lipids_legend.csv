@@ -1,0 +1,192 @@
+﻿Category,Group,Conjugation,Label,Data_type,varID
+bile acids feces,Secondary,Unconjugated,HDCA,normalized-logTrans-pareto,var001
+bile acids feces,Secondary,Unconjugated,DCA-isomer,normalized-logTrans-pareto,var002
+bile acids feces,Secondary,Unconjugated,DCA,normalized-logTrans-pareto,var003
+bile acids feces,Primary,Unconjugated,Alpha-MCA,normalized-logTrans-pareto,var004
+bile acids feces,Primary,Unconjugated,CA,normalized-logTrans-pareto,var005
+bile acids feces,Primary,Unconjugated,Beta-MCA,normalized-logTrans-pareto,var006
+bile acids feces,Secondary,Conjugated,TDCA,normalized-logTrans-pareto,var007
+bile acids feces,Secondary,Conjugated,TDCA-isomer,normalized-logTrans-pareto,var008
+bile acids feces,Secondary,Conjugated,TUDCA,normalized-logTrans-pareto,var009
+bile acids feces,Secondary,Conjugated,TDCA-isomer-2,normalized-logTrans-pareto,var010
+bile acids feces,Primary,Conjugated,TCA isomer,normalized-logTrans-pareto,var011
+bile acids feces,Primary,Conjugated,T-alpha-MCA,normalized-logTrans-pareto,var012
+bile acids feces,Primary,Conjugated,T-beta-MCA,normalized-logTrans-pareto,var013
+bile acids feces,Primary,Conjugated,T-omega-MCA,normalized-logTrans-pareto,var014
+bile acids feces,Primary,Conjugated,TCA,normalized-logTrans-pareto,var015
+bile acids liver,Secondary,Unconjugated,HDCA/UDCA,normalized-logTrans-pareto,var016
+bile acids liver,Primary,Unconjugated,CA,normalized-logTrans-pareto,var017
+bile acids liver,Primary,Unconjugated,ω-MCA,normalized-logTrans-pareto,var018
+bile acids liver,Primary,Unconjugated,β-MCA,normalized-logTrans-pareto,var019
+bile acids liver,Primary,Unconjugated,α-MCA,normalized-logTrans-pareto,var020
+bile acids liver,Secondary,Conjugated,TDCA-isomer,normalized-logTrans-pareto,var021
+bile acids liver,Secondary,Conjugated,TDCA,normalized-logTrans-pareto,var022
+bile acids liver,Secondary,Conjugated,TUDCA,normalized-logTrans-pareto,var023
+bile acids liver,Primary,Conjugated,T-ω-MCA,normalized-logTrans-pareto,var024
+bile acids liver,Primary,Conjugated,T-α-MCA,normalized-logTrans-pareto,var025
+bile acids liver,Primary,Conjugated,TCA,normalized-logTrans-pareto,var026
+bile acids liver,NA,NA,Cholesterol,normalized-logTrans-pareto,var027
+bile acids liver,NA,NA,Cholesterol ester,normalized-logTrans-pareto,var028
+brain sphingolipids,Ceramide,NA,C16 ceramide,normalized-logTrans-pareto,var029
+brain sphingolipids,Ceramide,NA,C18 ceramide,normalized-logTrans-pareto,var030
+brain sphingolipids,Ceramide,NA,C20 ceramide,normalized-logTrans-pareto,var031
+brain sphingolipids,Ceramide,NA,C22:1 ceramide,normalized-logTrans-pareto,var032
+brain sphingolipids,Ceramide,NA,C22 ceramide,normalized-logTrans-pareto,var033
+brain sphingolipids,Ceramide,NA,C24:1 ceramide,normalized-logTrans-pareto,var034
+brain sphingolipids,Ceramide,NA,C24 ceramide,normalized-logTrans-pareto,var035
+brain sphingolipids,SM,NA,C18:1 SM,normalized-logTrans-pareto,var036
+brain sphingolipids,SM,NA,C18 SM,normalized-logTrans-pareto,var037
+brain sphingolipids,SM,NA,C20 SM,normalized-logTrans-pareto,var038
+brain sphingolipids,SM,NA,C22:2 SM,normalized-logTrans-pareto,var039
+brain sphingolipids,SM,NA,C22:1 SM,normalized-logTrans-pareto,var040
+brain sphingolipids,SM,NA,C22 SM,normalized-logTrans-pareto,var041
+brain sphingolipids,SM,NA,C24:1 SM,normalized-logTrans-pareto,var042
+brain sphingolipids,SM,NA,C24 SM,normalized-logTrans-pareto,var043
+liver lipidomics,PC and LPC,NA,PC 32_0,raw-LC-MS-AUC-normalized-over-IS-AUC,var044
+liver lipidomics,PC and LPC,NA,PC 32_1,raw-LC-MS-AUC-normalized-over-IS-AUC,var045
+liver lipidomics,PC and LPC,NA,PC 34_0,raw-LC-MS-AUC-normalized-over-IS-AUC,var046
+liver lipidomics,PC and LPC,NA,PC 34_1,raw-LC-MS-AUC-normalized-over-IS-AUC,var047
+liver lipidomics,PC and LPC,NA,PC 34_2,raw-LC-MS-AUC-normalized-over-IS-AUC,var048
+liver lipidomics,PC and LPC,NA,PC 34_3,raw-LC-MS-AUC-normalized-over-IS-AUC,var049
+liver lipidomics,PC and LPC,NA,PC 36_0,raw-LC-MS-AUC-normalized-over-IS-AUC,var050
+liver lipidomics,PC and LPC,NA,PC 36_1,raw-LC-MS-AUC-normalized-over-IS-AUC,var051
+liver lipidomics,PC and LPC,NA,PC 36_2,raw-LC-MS-AUC-normalized-over-IS-AUC,var052
+liver lipidomics,PC and LPC,NA,PC 36_3,raw-LC-MS-AUC-normalized-over-IS-AUC,var053
+liver lipidomics,PC and LPC,NA,PC 36_4,raw-LC-MS-AUC-normalized-over-IS-AUC,var054
+liver lipidomics,PC and LPC,NA,PC 36_5,raw-LC-MS-AUC-normalized-over-IS-AUC,var055
+liver lipidomics,PC and LPC,NA,PC 38_3,raw-LC-MS-AUC-normalized-over-IS-AUC,var056
+liver lipidomics,PC and LPC,NA,PC 38_4,raw-LC-MS-AUC-normalized-over-IS-AUC,var057
+liver lipidomics,PC and LPC,NA,PC 38_5,raw-LC-MS-AUC-normalized-over-IS-AUC,var058
+liver lipidomics,PC and LPC,NA,PC 38_6,raw-LC-MS-AUC-normalized-over-IS-AUC,var059
+liver lipidomics,PC and LPC,NA,PC 40_4,raw-LC-MS-AUC-normalized-over-IS-AUC,var060
+liver lipidomics,PC and LPC,NA,PC 40_5,raw-LC-MS-AUC-normalized-over-IS-AUC,var061
+liver lipidomics,PC and LPC,NA,PC 40_6,raw-LC-MS-AUC-normalized-over-IS-AUC,var062
+liver lipidomics,PC and LPC,NA,PC 40_7,raw-LC-MS-AUC-normalized-over-IS-AUC,var063
+liver lipidomics,PC and LPC,NA,PC 40_8,raw-LC-MS-AUC-normalized-over-IS-AUC,var064
+liver lipidomics,PC and LPC,NA,LPC 14_0,raw-LC-MS-AUC-normalized-over-IS-AUC,var065
+liver lipidomics,PC and LPC,NA,LPC 16_0,raw-LC-MS-AUC-normalized-over-IS-AUC,var066
+liver lipidomics,PC and LPC,NA,LPC 16_1,raw-LC-MS-AUC-normalized-over-IS-AUC,var067
+liver lipidomics,PC and LPC,NA,LPC 18_0,raw-LC-MS-AUC-normalized-over-IS-AUC,var068
+liver lipidomics,PC and LPC,NA,LPC 18_1,raw-LC-MS-AUC-normalized-over-IS-AUC,var069
+liver lipidomics,PC and LPC,NA,LPC 18_2,raw-LC-MS-AUC-normalized-over-IS-AUC,var070
+liver lipidomics,PC and LPC,NA,LPC 18_3,raw-LC-MS-AUC-normalized-over-IS-AUC,var071
+liver lipidomics,PC and LPC,NA,LPC 20_0,raw-LC-MS-AUC-normalized-over-IS-AUC,var072
+liver lipidomics,PC and LPC,NA,LPC 20_1,raw-LC-MS-AUC-normalized-over-IS-AUC,var073
+liver lipidomics,PC and LPC,NA,LPC 20_2,raw-LC-MS-AUC-normalized-over-IS-AUC,var074
+liver lipidomics,PC and LPC,NA,LPC 20_3,raw-LC-MS-AUC-normalized-over-IS-AUC,var075
+liver lipidomics,PC and LPC,NA,LPC 20_4,raw-LC-MS-AUC-normalized-over-IS-AUC,var076
+liver lipidomics,PC and LPC,NA,LPC 20_5,raw-LC-MS-AUC-normalized-over-IS-AUC,var077
+liver lipidomics,PC and LPC,NA,LPC 22_0,raw-LC-MS-AUC-normalized-over-IS-AUC,var078
+liver lipidomics,PC and LPC,NA,LPC 22_4,raw-LC-MS-AUC-normalized-over-IS-AUC,var079
+liver lipidomics,PC and LPC,NA,LPC 22_5,raw-LC-MS-AUC-normalized-over-IS-AUC,var080
+liver lipidomics,PC and LPC,NA,LPC 22_6,raw-LC-MS-AUC-normalized-over-IS-AUC,var081
+liver lipidomics,PC and LPC,NA,LPC 24_0,raw-LC-MS-AUC-normalized-over-IS-AUC,var082
+liver lipidomics,PC and LPC,NA,LPC 26_0,raw-LC-MS-AUC-normalized-over-IS-AUC,var083
+liver lipidomics,PE and LPE,NA,PE 34_0,raw-LC-MS-AUC-normalized-over-IS-AUC,var084
+liver lipidomics,PE and LPE,NA,PE 34_1,raw-LC-MS-AUC-normalized-over-IS-AUC,var085
+liver lipidomics,PE and LPE,NA,PE 34_2,raw-LC-MS-AUC-normalized-over-IS-AUC,var086
+liver lipidomics,PE and LPE,NA,PE 36_1,raw-LC-MS-AUC-normalized-over-IS-AUC,var087
+liver lipidomics,PE and LPE,NA,PE 36_2,raw-LC-MS-AUC-normalized-over-IS-AUC,var088
+liver lipidomics,PE and LPE,NA,PE 36_3,raw-LC-MS-AUC-normalized-over-IS-AUC,var089
+liver lipidomics,PE and LPE,NA,PE 36_4,raw-LC-MS-AUC-normalized-over-IS-AUC,var090
+liver lipidomics,PE and LPE,NA,PE 36_5,raw-LC-MS-AUC-normalized-over-IS-AUC,var091
+liver lipidomics,PE and LPE,NA,PE 38_4,raw-LC-MS-AUC-normalized-over-IS-AUC,var092
+liver lipidomics,PE and LPE,NA,PE 38_5,raw-LC-MS-AUC-normalized-over-IS-AUC,var093
+liver lipidomics,PE and LPE,NA,PE 38_6,raw-LC-MS-AUC-normalized-over-IS-AUC,var094
+liver lipidomics,PE and LPE,NA,PE 40_4,raw-LC-MS-AUC-normalized-over-IS-AUC,var095
+liver lipidomics,PE and LPE,NA,PE 40_6,raw-LC-MS-AUC-normalized-over-IS-AUC,var096
+liver lipidomics,PE and LPE,NA,PE 42_9,raw-LC-MS-AUC-normalized-over-IS-AUC,var097
+liver lipidomics,PE and LPE,NA,PE 40_7,raw-LC-MS-AUC-normalized-over-IS-AUC,var098
+liver lipidomics,PE and LPE,NA,LPE 16_0,raw-LC-MS-AUC-normalized-over-IS-AUC,var099
+liver lipidomics,PE and LPE,NA,LPE 16_1,raw-LC-MS-AUC-normalized-over-IS-AUC,var100
+liver lipidomics,PE and LPE,NA,LPE 18_0,raw-LC-MS-AUC-normalized-over-IS-AUC,var101
+liver lipidomics,PE and LPE,NA,LPE 18_1,raw-LC-MS-AUC-normalized-over-IS-AUC,var102
+liver lipidomics,PE and LPE,NA,LPE 18_2,raw-LC-MS-AUC-normalized-over-IS-AUC,var103
+liver lipidomics,PE and LPE,NA,LPE 22_6,raw-LC-MS-AUC-normalized-over-IS-AUC,var104
+liver lipidomics,PI and LPI,NA,PI 34:1,raw-LC-MS-AUC-normalized-over-IS-AUC,var105
+liver lipidomics,PI and LPI,NA,PI 34:2,raw-LC-MS-AUC-normalized-over-IS-AUC,var106
+liver lipidomics,PI and LPI,NA,PI 36:1,raw-LC-MS-AUC-normalized-over-IS-AUC,var107
+liver lipidomics,PI and LPI,NA,PI 36:2,raw-LC-MS-AUC-normalized-over-IS-AUC,var108
+liver lipidomics,PI and LPI,NA,PI 36:3,raw-LC-MS-AUC-normalized-over-IS-AUC,var109
+liver lipidomics,PI and LPI,NA,PI 36:4,raw-LC-MS-AUC-normalized-over-IS-AUC,var110
+liver lipidomics,PI and LPI,NA,PI 38:5,raw-LC-MS-AUC-normalized-over-IS-AUC,var111
+liver lipidomics,PI and LPI,NA,PI 38:6,raw-LC-MS-AUC-normalized-over-IS-AUC,var112
+liver lipidomics,PI and LPI,NA,PI 40:4,raw-LC-MS-AUC-normalized-over-IS-AUC,var113
+liver lipidomics,PI and LPI,NA,PI 40:5,raw-LC-MS-AUC-normalized-over-IS-AUC,var114
+liver lipidomics,PI and LPI,NA,PI 40:6,raw-LC-MS-AUC-normalized-over-IS-AUC,var115
+liver lipidomics,PI and LPI,NA,LPI 16:1,raw-LC-MS-AUC-normalized-over-IS-AUC,var116
+liver lipidomics,PI and LPI,NA,LPI 16:0,raw-LC-MS-AUC-normalized-over-IS-AUC,var117
+liver lipidomics,PI and LPI,NA,LPI 18:0,raw-LC-MS-AUC-normalized-over-IS-AUC,var118
+liver lipidomics,PI and LPI,NA,LPI 18:1,raw-LC-MS-AUC-normalized-over-IS-AUC,var119
+liver lipidomics,PI and LPI,NA,LPI 20:4,raw-LC-MS-AUC-normalized-over-IS-AUC,var120
+liver lipidomics,PS,NA,PS 38:4,raw-LC-MS-AUC-normalized-over-IS-AUC,var121
+liver lipidomics,PS,NA,PS 40:4,raw-LC-MS-AUC-normalized-over-IS-AUC,var122
+liver lipidomics,Cholesterols,NA,Cholesterol,raw-LC-MS-AUC-normalized-over-IS-AUC,var123
+liver lipidomics,Cholesterols,NA,Cholesterol ester,raw-LC-MS-AUC-normalized-over-IS-AUC,var124
+liver lipidomics,DG and TG,NA,DG 32:0,raw-LC-MS-AUC-normalized-over-IS-AUC,var125
+liver lipidomics,DG and TG,NA,DG 34:1,raw-LC-MS-AUC-normalized-over-IS-AUC,var126
+liver lipidomics,DG and TG,NA,DG 34:2,raw-LC-MS-AUC-normalized-over-IS-AUC,var127
+liver lipidomics,DG and TG,NA,DG 34:3,raw-LC-MS-AUC-normalized-over-IS-AUC,var128
+liver lipidomics,DG and TG,NA,DG 36:1,raw-LC-MS-AUC-normalized-over-IS-AUC,var129
+liver lipidomics,DG and TG,NA,DG 36:2,raw-LC-MS-AUC-normalized-over-IS-AUC,var130
+liver lipidomics,DG and TG,NA,DG 36:3,raw-LC-MS-AUC-normalized-over-IS-AUC,var131
+liver lipidomics,DG and TG,NA,DG 36:4,raw-LC-MS-AUC-normalized-over-IS-AUC,var132
+liver lipidomics,DG and TG,NA,DG 36:5,raw-LC-MS-AUC-normalized-over-IS-AUC,var133
+liver lipidomics,DG and TG,NA,DG 36:6,raw-LC-MS-AUC-normalized-over-IS-AUC,var134
+liver lipidomics,DG and TG,NA,DG 38:4,raw-LC-MS-AUC-normalized-over-IS-AUC,var135
+liver lipidomics,DG and TG,NA,DG 38:5,raw-LC-MS-AUC-normalized-over-IS-AUC,var136
+liver lipidomics,DG and TG,NA,DG 38:6,raw-LC-MS-AUC-normalized-over-IS-AUC,var137
+liver lipidomics,DG and TG,NA,DG 38:7,raw-LC-MS-AUC-normalized-over-IS-AUC,var138
+liver lipidomics,DG and TG,NA,TG 46_1,raw-LC-MS-AUC-normalized-over-IS-AUC,var139
+liver lipidomics,DG and TG,NA,TG 46_2,raw-LC-MS-AUC-normalized-over-IS-AUC,var140
+liver lipidomics,DG and TG,NA,TG 48_0,raw-LC-MS-AUC-normalized-over-IS-AUC,var141
+liver lipidomics,DG and TG,NA,TG 48_1,raw-LC-MS-AUC-normalized-over-IS-AUC,var142
+liver lipidomics,DG and TG,NA,TG 48_2,raw-LC-MS-AUC-normalized-over-IS-AUC,var143
+liver lipidomics,DG and TG,NA,TG 49_2,raw-LC-MS-AUC-normalized-over-IS-AUC,var144
+liver lipidomics,DG and TG,NA,TG 50_1,raw-LC-MS-AUC-normalized-over-IS-AUC,var145
+liver lipidomics,DG and TG,NA,TG 50_2,raw-LC-MS-AUC-normalized-over-IS-AUC,var146
+liver lipidomics,DG and TG,NA,TG 50_3,raw-LC-MS-AUC-normalized-over-IS-AUC,var147
+liver lipidomics,DG and TG,NA,TG 50_4,raw-LC-MS-AUC-normalized-over-IS-AUC,var148
+liver lipidomics,DG and TG,NA,TG 52_0,raw-LC-MS-AUC-normalized-over-IS-AUC,var149
+liver lipidomics,DG and TG,NA,TG 52_1,raw-LC-MS-AUC-normalized-over-IS-AUC,var150
+liver lipidomics,DG and TG,NA,TG 52_2,raw-LC-MS-AUC-normalized-over-IS-AUC,var151
+liver lipidomics,DG and TG,NA,TG 52_3,raw-LC-MS-AUC-normalized-over-IS-AUC,var152
+liver lipidomics,DG and TG,NA,TG 52_4,raw-LC-MS-AUC-normalized-over-IS-AUC,var153
+liver lipidomics,DG and TG,NA,TG 52_5,raw-LC-MS-AUC-normalized-over-IS-AUC,var154
+liver lipidomics,DG and TG,NA,TG 54_2,raw-LC-MS-AUC-normalized-over-IS-AUC,var155
+liver lipidomics,DG and TG,NA,TG 54_3,raw-LC-MS-AUC-normalized-over-IS-AUC,var156
+liver lipidomics,DG and TG,NA,TG 54_4,raw-LC-MS-AUC-normalized-over-IS-AUC,var157
+liver lipidomics,DG and TG,NA,TG 54_5,raw-LC-MS-AUC-normalized-over-IS-AUC,var158
+liver lipidomics,DG and TG,NA,TG 54_6,raw-LC-MS-AUC-normalized-over-IS-AUC,var159
+liver lipidomics,DG and TG,NA,TG 54_7,raw-LC-MS-AUC-normalized-over-IS-AUC,var160
+liver lipidomics,DG and TG,NA,TG 56_2,raw-LC-MS-AUC-normalized-over-IS-AUC,var161
+liver lipidomics,DG and TG,NA,TG 56_3,raw-LC-MS-AUC-normalized-over-IS-AUC,var162
+liver lipidomics,DG and TG,NA,TG 56_4,raw-LC-MS-AUC-normalized-over-IS-AUC,var163
+liver lipidomics,DG and TG,NA,TG 56_5,raw-LC-MS-AUC-normalized-over-IS-AUC,var164
+liver lipidomics,DG and TG,NA,TG 56_6,raw-LC-MS-AUC-normalized-over-IS-AUC,var165
+liver lipidomics,DG and TG,NA,TG 56_7,raw-LC-MS-AUC-normalized-over-IS-AUC,var166
+liver lipidomics,DG and TG,NA,TG 56_8,raw-LC-MS-AUC-normalized-over-IS-AUC,var167
+liver lipidomics,DG and TG,NA,TG 58_4,raw-LC-MS-AUC-normalized-over-IS-AUC,var168
+liver lipidomics,DG and TG,NA,TG 58_5,raw-LC-MS-AUC-normalized-over-IS-AUC,var169
+liver lipidomics,DG and TG,NA,TG 58_6,raw-LC-MS-AUC-normalized-over-IS-AUC,var170
+liver lipidomics,DG and TG,NA,TG 58_7,raw-LC-MS-AUC-normalized-over-IS-AUC,var171
+liver lipidomics,DG and TG,NA,TG 58_8,raw-LC-MS-AUC-normalized-over-IS-AUC,var172
+liver lipidomics,DG and TG,NA,TG 58_9,raw-LC-MS-AUC-normalized-over-IS-AUC,var173
+liver lipidomics,Sphingolipids,NA,sphinganine d16:0,raw-LC-MS-AUC-normalized-over-IS-AUC,var174
+liver lipidomics,Sphingolipids,NA,sphingosine d18:1,raw-LC-MS-AUC-normalized-over-IS-AUC,var175
+liver lipidomics,Sphingolipids,NA,sphingosine d20:1,raw-LC-MS-AUC-normalized-over-IS-AUC,var176
+liver lipidomics,Sphingolipids,NA,C16 ceramide,raw-LC-MS-AUC-normalized-over-IS-AUC,var177
+liver lipidomics,Sphingolipids,NA,C18 ceramide,raw-LC-MS-AUC-normalized-over-IS-AUC,var178
+liver lipidomics,Sphingolipids,NA,C20 ceramide,raw-LC-MS-AUC-normalized-over-IS-AUC,var179
+liver lipidomics,Sphingolipids,NA,C22 ceramide,raw-LC-MS-AUC-normalized-over-IS-AUC,var180
+liver lipidomics,Sphingolipids,NA,C24 ceramide,raw-LC-MS-AUC-normalized-over-IS-AUC,var181
+liver lipidomics,Sphingolipids,NA,C16 SM,raw-LC-MS-AUC-normalized-over-IS-AUC,var182
+liver lipidomics,Sphingolipids,NA,C18 SM,raw-LC-MS-AUC-normalized-over-IS-AUC,var183
+liver lipidomics,Sphingolipids,NA,C20 SM,raw-LC-MS-AUC-normalized-over-IS-AUC,var184
+liver lipidomics,Sphingolipids,NA,C22 SM,raw-LC-MS-AUC-normalized-over-IS-AUC,var185
+liver lipidomics,Sphingolipids,NA,C24 SM,raw-LC-MS-AUC-normalized-over-IS-AUC,var186
+liver lipidomics,Sphingolipids,NA,C16:1 SM,raw-LC-MS-AUC-normalized-over-IS-AUC,var187
+liver lipidomics,Sphingolipids,NA,C18:1 SM,raw-LC-MS-AUC-normalized-over-IS-AUC,var188
+liver lipidomics,Sphingolipids,NA,C20:1 SM,raw-LC-MS-AUC-normalized-over-IS-AUC,var189
+liver lipidomics,Sphingolipids,NA,C22:1 SM,raw-LC-MS-AUC-normalized-over-IS-AUC,var190
+liver lipidomics,Sphingolipids,NA,C24:1 SM,raw-LC-MS-AUC-normalized-over-IS-AUC,var191
